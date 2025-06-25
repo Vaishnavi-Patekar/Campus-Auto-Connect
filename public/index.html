@@ -1,0 +1,64 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Booking</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Campus AutoConnect</h1>
+    <button onclick="location.href='login.html'">Login</button>
+    <button onclick="location.href='signup.html'">Sign Up</button>
+  </header>
+
+  <section class="hero">
+    <h2>Book an Auto Easily!</h2>
+     <!-- <button id="bookBtn" style="display: none;">Book Now</button>  -->
+
+     <button onclick="openForm()">Book Now</button>
+
+  </section>
+
+
+
+
+  <div id="bookingForm" class="popup">
+    <form id="autoForm">
+      <h3>Book Auto</h3>
+  
+      <label for="from">Pickup Location</label>
+      <select id="from" required>
+        <option value="TCOER">TCOER</option>
+        <option value="Yewalewadi">Yewalewadi</option>
+        <option value="Khadi Machine">Khadi Machine</option>
+      </select>
+  
+      <label for="to">Drop Location</label>
+      <select id="to" required>
+        <option value="TCOER">TCOER</option>
+        <option value="Yewalewadi">Yewalewadi</option>
+        <option value="Khadi Machine">Khadi Machine</option>
+      </select>
+  
+      <div id="chargeDisplay">
+        <p><strong>Charges:</strong></p>
+        <p id="chargeInfo">Select a route to see charges.</p>
+      </div>
+  
+      <button type="submit">Confirm Booking</button>
+      <button type="button" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+  
+  <!-- Success Popup -->
+  <div id="successPopup" class="popup">
+    <h3>Auto booked successfully!</h3>
+    <button onclick="closeSuccess()">OK</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

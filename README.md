@@ -2,7 +2,7 @@
 
 A smart and responsive web application that helps college students book autos between fixed campus locations (like TCOER, Yewalewadi, and Khadi Machine), just like Uber but tailored for campus travel!
 
----
+--- 
 
 ## ✨ Features
 
